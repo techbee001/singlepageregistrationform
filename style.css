@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    font-size: 18px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing-view{
+    background:hsl(193, 100%, 96%) url('images/bg-hero-desktop.svg');
+    height: 100vh;         
+    margin-bottom: 100px;     
+    border: 1px solid hsl(193, 100%, 96%);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 0 100px 0;
+}
+
+header img{
+    width: 200px;
+}
+
+header button{
+    padding: 5px 40px;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgba(183, 180, 180, 0.8);
+}
+
+header button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(183, 180, 180, 0.8);
+}
+
+.landing-view > div, .card, footer > div{
+    width:80%;
+    margin: auto;
+}
+
+.landing-view > div > div, .card, footer > div{
+    display: flex;
+}
+
+.landing-view > div > div > div, .card > div , footer > div >div{
+    width: 50%;
+}
+
+.illustration-build, .card-comment{
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.illustration-build h1, .illustration-build p{
+    margin-bottom: 20px;
+}
+
+.illustration-build button, .bottom-card button{
+    padding: 12px 50px;
+    border-radius: 20px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: 1px solid hsl(322, 86%, 58%);
+    font-size: bolder;
+}
+
+.illustration-build button:hover, .bottom-card button{
+    cursor: pointer;
+    border: 1px solid hsl(322, 76%, 29%);
+}
+
+.illustration-img > img, .card img{
+    width: 100%
+}
+
+.cards{
+    margin: 50px 0;  
+}
+
+.card, .bottom-card{
+    border-radius: 10px;
+    padding: 50px 10px 50px 100px;
+    box-shadow: 1px 1px 10px 1px rgba(183, 180, 180, 0.8);
+}
+
+.card-comment:nth-child(odd){
+    margin: 0;
+    margin-right: 50px;
+}
+
+.card-comment:nth-child(even){
+    margin: 0;
+    margin-left: 50px;
+}
+
+.card .img img{
+    width: 300px
+}
+
+.bottom-card{
+    box-shadow: 1px 1px 5px hsl(192, 100%, 9%);
+    position: relative;
+    top: 80px;
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.bottom-card h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.bottom-card button{
+    padding: 15px 80px;
+
+}
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+
+.footer-logo{
+    margin-bottom: 20px;
+}
+
+.footer-logo div{
+    margin: 150px 0 10px 20px;
+}
+
+.contact{
+    padding: 0 100px 0 0;
+    width: 100%;
+}
+
+.contact > div{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact img{
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.about p, .career p{
+    margin-bottom: 20px;
+}
+
+.social{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social div i{
+    margin-right: 10px;
+}
+
+
+@media (min-width:375px) and (max-width: 860px){
+    *{
+        font-size: .8em;
+    }
+    header{
+        margin:10px 0 50px 0;
+    }
+
+    header img{
+        width: 100px;
+    }
+    
+    header button{
+        padding: 5px 30px;
+        font-size: 1.5em;
+    }
+
+    .landing-view{
+        background:hsl(193, 100%, 96%) url('images/bg-hero-mobile.svg');
+        margin-bottom: 100px;     
+    }
+
+    .landing-view > div, .card, footer > div{
+        padding: 20px;
+        width:100%;
+        margin: auto;
+        text-align: center ;
+    }
+
+    .landing-view > div > div, .card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer > div{
+        display: flex;
+    }
+
+    .landing-view > div > div > div, .card > div , footer > div >div{
+        width: 100%;
+    }
+
+    .illustration-build, .card-comment{
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .illustration-build h1{
+        font-size: 5em;
+        margin-bottom: 30px;
+    }
+
+    .illustration-build p{
+        font-size: 4em;
+        margin-bottom: 30px;
+    }
+
+    .illustration-build button, .bottom-card button{
+        padding: 12px 50px;
+        border-radius: 20px;
+        background-color: hsl(322, 100%, 66%);
+        color: white;
+        border: 1px solid hsl(322, 86%, 58%);
+        font-size: bolder;
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+
+    .illustration-img > img{
+        width: 40%
+    }
+
+    .card-comment:nth-child(odd), .card-comment:nth-child(even){
+        margin: 0;
+        /* margin-right: 0px; */
+    }
+
+    .card-comment h3{
+        font-size: 3em;
+        margin: 50px 0 15px 0;
+    }
+    
+    .card-comment p{
+        font-size: 2.5em;
+        color: grey;
+        margin-bottom: 30px;
+    }
+
+    .card .img{
+        width: 100%;
+    }  
+
+    .card .img img{
+        width: 250px;
+    }
+
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+    
+    .cards{
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .bottom-card{
+        box-shadow: 1px 1px 5px hsl(192, 100%, 9%);
+        position: relative;
+        top: 40px;
+        width: 90%;
+        margin: auto;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .bottom-card h3{
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    
+    .bottom-card button{
+        font-size: 1.1em;
+        padding: 15px 60px;
+        margin-bottom: 0;
+    }
+
+    footer{
+        background-color: hsl(192, 100%, 9%);
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: lighter;
+        padding-bottom: 50px;
+    }
+
+    footer > div{
+        text-align: left;
+        padding: 5px;
+    }
+
+    .footer-logo img{
+        width: 20%;
+    }
+    
+    .footer-logo div{
+        margin: 80px 0 0px 0px;
+    }
+
+    .career{
+        margin-bottom: 40px;
+    }
+
+    .social  p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375px){
+    *{
+        font-size: .8em;
+    }
+    header{
+        margin:10px 0 50px 0;
+    }
+
+    header img{
+        width: 100px;
+    }
+    
+    header button{
+        padding: 5px 30px;
+        font-size: 1.5em;
+    }
+
+    .landing-view{
+        background:hsl(193, 100%, 96%) url('images/bg-hero-mobile.svg');
+        margin-bottom: 100px;     
+    }
+
+    .landing-view > div, .card, footer > div{
+        padding: 20px;
+        width:100%;
+        margin: auto;
+        text-align: center ;
+    }
+
+    .landing-view > div > div, .card, footer > div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .landing-view > div > div > div, .card > div , footer > div >div{
+        width: 100%;
+    }
+
+    .illustration-build, .card-comment{
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .illustration-build h1{
+        font-size: 5em;
+        margin-bottom: 30px;
+    }
+
+    .illustration-build p{
+        font-size: 4em;
+        margin-bottom: 30px;
+    }
+
+    .illustration-build button, .bottom-card button{
+        padding: 12px 50px;
+        border-radius: 20px;
+        background-color: hsl(322, 100%, 66%);
+        color: white;
+        border: 1px solid hsl(322, 86%, 58%);
+        font-size: bolder;
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+
+    .illustration-img > img{
+        width: 80%
+    }
+
+    .card-comment:nth-child(odd), .card-comment:nth-child(even){
+        margin: 0;
+        /* margin-right: 0px; */
+    }
+
+    .card-comment h3{
+        font-size: 3em;
+        margin: 50px 0 15px 0;
+    }
+    
+    .card-comment p{
+        font-size: 2.5em;
+        color: grey;
+        margin-bottom: 30px;
+    }
+
+    .card .img{
+        width: 100%;
+    }  
+
+    .card .img img{
+        width: 250px;
+    }
+
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+    
+    .cards{
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .bottom-card{
+        box-shadow: 1px 1px 5px hsl(192, 100%, 9%);
+        position: relative;
+        top: 40px;
+        width: 90%;
+        margin: auto;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .bottom-card h3{
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    
+    .bottom-card button{
+        font-size: 1.1em;
+        padding: 15px 60px;
+        margin-bottom: 0;
+    }
+
+    footer{
+        background-color: hsl(192, 100%, 9%);
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: lighter;
+        padding-bottom: 50px;
+    }
+
+    footer > div{
+        text-align: left;
+        padding: 5px;
+    }
+
+    .footer-logo img{
+        width: 45%;
+    }
+    
+    .footer-logo div{
+        margin: 80px 0 0px 0px;
+    }
+
+    .career{
+        margin-bottom: 40px;
+    }
+
+    .social{
+        width: 100%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .social  p{
+        font-size: 12px;
+    }
+    
+    .social div {
+        padding-bottom: 20px;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+}
+
+
